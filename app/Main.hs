@@ -11,9 +11,9 @@ import Text.Megaparsec
 import Data.Maybe
 
 import Data.IntSet (IntSet)
-import Data.IntMap.Strict qualified as IntMap
+import qualified Data.IntMap.Strict  as IntMap
 
-import Data.Map.Strict qualified as Map
+import qualified Data.Map.Strict  as Map
 
 import Control.Monad
 

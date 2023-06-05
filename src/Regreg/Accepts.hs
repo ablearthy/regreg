@@ -5,7 +5,7 @@ import Regreg.FA (DFA (..))
 import Data.IntSet (IntSet)
 import qualified Data.IntSet as IntSet
 
-import Data.Map.Strict qualified as Map
+import qualified Data.Map.Strict  as Map
 
 import qualified Data.Text as T
 import Data.Text.Internal.Fusion
