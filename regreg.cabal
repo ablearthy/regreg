@@ -7,8 +7,8 @@ cabal-version: 1.12
 name:           regreg
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/ablearthy/regreg#readme>
-homepage:       https://github.com/githubuser/regreg#readme
-bug-reports:    https://github.com/githubuser/regreg/issues
+homepage:       https://github.com/ablearthy/regreg#readme
+bug-reports:    https://github.com/ablearthy/regreg/issues
 author:         Able Arthy
 maintainer:     ablearthy@gmail.com
 copyright:      2023 Able Arthy
@@ -21,7 +21,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/regreg
+  location: https://github.com/ablearthy/regreg
 
 library
   exposed-modules:
