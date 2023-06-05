@@ -1,0 +1,95 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           regreg
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/ablearthy/regreg#readme>
+homepage:       https://github.com/githubuser/regreg#readme
+bug-reports:    https://github.com/githubuser/regreg/issues
+author:         Able Arthy
+maintainer:     ablearthy@gmail.com
+copyright:      2023 Able Arthy
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/regreg
+
+library
+  exposed-modules:
+      Lib
+      Regreg.Accepts
+      Regreg.Algo
+      Regreg.FA
+      Regreg.Parser
+      Regreg.Regexp
+  other-modules:
+      Paths_regreg
+  hs-source-dirs:
+      src
+  default-extensions:
+      OverloadedStrings
+      ImportQualifiedPost
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , megaparsec
+    , mtl
+    , text
+    , unordered-containers
+    , vector
+  default-language: GHC2021
+
+executable regreg-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_regreg
+  hs-source-dirs:
+      app
+  default-extensions:
+      OverloadedStrings
+      ImportQualifiedPost
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , megaparsec
+    , mtl
+    , regreg
+    , text
+    , unordered-containers
+    , vector
+  default-language: GHC2021
+
+test-suite regreg-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_regreg
+  hs-source-dirs:
+      test
+  default-extensions:
+      OverloadedStrings
+      ImportQualifiedPost
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , hspec
+    , hspec-contrib
+    , megaparsec
+    , mtl
+    , regreg
+    , text
+    , unordered-containers
+    , vector
+  default-language: GHC2021
