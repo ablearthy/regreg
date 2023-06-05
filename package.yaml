@@ -41,10 +41,6 @@ ghc-options:
 
 language: GHC2021
 
-default-extensions:
-  - OverloadedStrings
-  - ImportQualifiedPost
-
 library:
   source-dirs: src
 
